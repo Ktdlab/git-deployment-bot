@@ -1,14 +1,12 @@
 <?php
-
-$TITLE   = 'Git Deployment Bot';
-$VERSION = '1.0';
+$VERSION = '1.2V';
 
 echo <<<EOT
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>$TITLE</title>
+	<title>Git Deployment Bot</title>
 </head>
 <body style="background-color: #000000; color: #FFFFFF; font-weight: bold; padding: 0 10px;">
 <pre>
@@ -23,7 +21,7 @@ echo <<<EOT
  \_____|_|\__| |_____/ \___| .__/|_|\___/ \__, |_| |_| |_|\___|_| |_|\__| |____/ \___/ \__|
                            | |             __/ |                                           
                            |_|            |___/                                            
-
+$VERSION
 
 
 EOT;
@@ -35,14 +33,12 @@ flush();
 // Actually run the bot
 
 $commands = array(
-	'echo $PWD',
 	'whoami',
 	'git pull',
 	'git status',
 	'git submodule sync',
 	'git submodule update',
 	'git submodule status',
-    'test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"',
 );
 
 $output = "\n";
