@@ -47,13 +47,12 @@ This gist assumes:
 
 # 3 - On the Server
 
-*Here we clone the origin repo into a chmodded /var/www/html folder*
-
 ## Pull from origin
 
     sudo chown -R www-data:www-data /var/www/html
     sudo -Hu www-data git clone git@github.com:USERNAME/REPO.git /var/www/html
 
+*Here we clone the script into a repo folder - sudo wget https://github.com/Ktdlab/git-deployment-bot/blob/main/update.php*
 # Done!
 
 Now you're ready to go.
